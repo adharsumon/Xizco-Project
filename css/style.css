@@ -1,0 +1,1144 @@
+/*Google Font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Hind', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.bg_cover {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0;
+    color: #000757;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Hind', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0;
+    color: #666666;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+.custom-container {
+    padding: 0 70px;
+}
+
+.single_about {
+    margin: 0;
+    padding: 0;
+}
+
+/*ALL BUTTON STYLE HERE*/
+.theme_button {}
+
+.theme_button a {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background: #0083ff;
+    padding: 15px 25px;
+}
+
+/*ALL SECTION TITLE HERE*/
+.section_title {}
+
+.section_title h2 {
+    font-size: 30px;
+    color: #000757;
+    text-transform: uppercase;
+    /*    text-align: center;*/
+}
+
+.section_title span {
+    background: #eaeaea;
+    width: 200px;
+    height: 3px;
+    display: inline-block;
+    position: relative;
+}
+
+.section_title span:before {
+    position: absolute;
+    content: "";
+    background: #0083ff;
+    width: 30px;
+    height: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*END OF COMMON CSS*/
+
+
+/*==============================
+    02.  HEADER CSS
+==============================*/
+/*HEADER TOP*/
+.header_top {
+    background: #000757;
+}
+
+.header_top .top_title span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header_top .top_social a {
+    font-size: 16px;
+    color: #fff;
+    background: #0083ff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: transparent;
+    margin-left: 10px;
+    margin-top: 10px;
+    transition: all .3s linear;
+}
+
+.header_top .top_social a:hover {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+/*HEADER DEATIL PART*/
+.header_details {
+    background: #fff;
+}
+
+.header_info_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header_info .info_icon a {
+    font-size: 30px;
+    background: #f5f8ff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.header_info .info_text {
+    margin-left: 18px;
+}
+
+.header_info .info_text span {
+    font-size: 14px;
+    color: #666666;
+}
+
+/*************************
+=======MENUBAR HERE=======
+*************************/
+
+.menu_item .navbar-nav .nav-item .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 40px;
+    position: relative;
+}
+
+.menu_item .navbar-nav .nav-item:first-child .nav-link {
+    margin-left: 0;
+}
+
+.menu_item .navbar-nav .nav-item .nav-link::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 30px;
+    height: 6px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.menu_item .navbar-nav .nav-item .nav-link:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn_search {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 7px;
+    border: 0;
+    background: transparent;
+}
+
+/*MENU_SEARCH BUTTON HERE*/
+.menu_btn {
+    font-size: 20px;
+    color: #fff;
+    border: 0;
+    text-align: center;
+}
+
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent !important;
+}
+
+.btn_wrap {
+    position: absolute;
+    width: 350px;
+    bottom: -35px;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.btn_one {
+    position: relative;
+}
+
+.btn_one input {
+    padding: 5px 10px;
+    border: 0;
+    width: 100%;
+}
+
+.btn_two {
+    position: absolute;
+    background: #0083ff;
+    color: #fff;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    padding: 5px;
+}
+
+.btn_two:hover {
+    color: #fff;
+}
+
+.btn_wrap.btn_show {
+    width: 350px;
+    opacity: 1;
+    visibility: visible;
+    bottom: -45px;
+    z-index: 9;
+}
+
+/*==========================
+     03. BANNER CSS
+===========================*/
+.banner_overlay {
+    background: rgba(0, 7, 87, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.banner_area {
+    padding: 250px 0;
+}
+
+.banner_text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    padding-right: 220px;
+}
+
+/*BANNER SLIDER PART*/
+.slick-dots li {
+    display: inline-block;
+}
+
+.banner_slider .slick-dots {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.banner_slider .slick-dots button {
+    font-size: 0;
+    border: 1px solid #fff;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.banner_slider .slick-dots .slick-active button {
+    background: #0083ff;
+    border: transparent;
+}
+
+/*==============================
+     04. ABOUT PART CSS
+==============================*/
+.single_about {
+    display: flex;
+}
+
+.about_left {
+    display: flex;
+}
+
+.col-lg-11.single_about {
+    padding: 0;
+}
+
+.about_icon {
+    background: #000757;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    transition: all .3s linear;
+}
+
+.about_icon:hover {
+    background: #0083ff;
+}
+
+.about_icon img {}
+
+.about_text h2 {
+    font-size: 18px;
+    color: #000757;
+    text-transform: uppercase;
+}
+
+.about_text p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+/*ABOUT_RIGHT*/
+.about_right.pt-35::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #eaeaea;
+    top: 0;
+    left: 35px;
+}
+
+.about_business h2 {
+    font-size: 24px;
+}
+
+.about_business p {
+    line-height: 1.5;
+}
+
+.about_btn .theme_button {
+    padding: 30px 0;
+    margin-left: 75px;
+}
+
+/*==============================
+     05. BEST SERVICES CSS
+==============================*/
+.service_part {
+    background: #f5f8ff;
+}
+
+.service_icon {
+    background: #000757;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    transition: all .3s linear;
+}
+
+.service_text h3 {
+    font-size: 18px;
+}
+
+.service_btn a {
+    color: #000757;
+    background: transparent;
+    padding: 15px 25px;
+    border: 1px solid #000757;
+    transition: all .3s linear;
+}
+
+.single_service:hover .service_icon {
+    background: #0083ff;
+}
+
+.single_service:hover .service_btn a {
+    background: #0083ff;
+    border: transparent;
+    color: #fff;
+}
+
+/*==============================
+     06. BEST WORK CSS
+==============================*/
+.work_btn {}
+
+.work_btn button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #000757;
+    background: transparent;
+    padding: 15px 25px;
+    border: 1px solid #000757;
+    margin-left: 10px;
+    transition: all .3s linear;
+}
+
+.work_btn button:hover {
+    background: #0083ff;
+    border: transparent;
+    color: #fff;
+}
+
+.work_btn .work_btn_active {
+    background: #0083ff;
+    border: transparent;
+    color: #fff;
+}
+
+
+.work_gal {
+    position: relative;
+}
+
+.work_gal_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 7, 87, 0.6);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.work_gal_wrap {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.work_gal_icon {}
+
+.work_gal_icon a {
+    font-size: 18px;
+    color: #fff;
+    background: #0083ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+}
+
+.work_gal_text {}
+
+.work_gal_text .work_text {
+    font-size: 20px !important;
+}
+
+
+.work_gal_text h4 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.work_gal_text span {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.work_gal:hover .work_gal_overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.work_gal_overlay.overlay_active.text-center {
+    opacity: 1;
+    visibility: visible;
+    transform: all .3s linear;
+}
+
+
+/*==============================
+     07. COUNTER UP CSS
+==============================*/
+.counter_overlay {
+    background: rgba(0, 7, 87, 0.6);
+}
+
+.counter_area {}
+
+.counter_area .fa {
+    font-size: 40px;
+    background: #000757;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+}
+
+.counter_area h4 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 55px;
+    margin-bottom: 30px;
+}
+
+.counter_area span {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 14px;
+}
+
+/*==============================
+     08. OUR TEAM CSS
+==============================*/
+.single_team {
+    border: 1px solid #eaeaea;
+    padding: 30px 25px;
+    transition: all .3s linear;
+}
+
+.single_team:hover {
+    background: #f5f8ff;
+    border: transparent;
+    box-shadow: 0px 0px 10px 0px rgba(149, 149, 149, 0.6);
+}
+
+.team_img {
+    background: #eaeaea;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    line-height: 100px;
+}
+
+.team_img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team_icon {
+    padding: 30px 0;
+}
+
+.team_icon a {
+    font-size: 14px;
+    color: #000757;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 1px solid #000757;
+    margin-left: 10px;
+    transition: all .3s linear;
+}
+
+.team_icon a:hover {
+    background: #0083ff;
+    border: transparent;
+    color: #fff;
+}
+
+
+.team_text {}
+
+.team_text h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.team_text span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666666;
+}
+
+.team_text p {}
+
+/*==============================
+     09. OUR TESTIMONIAL  CSS
+==============================*/
+.testimonial_part {
+    background: #f5f8ff;
+}
+
+.testimonial_part .section_title span::before {
+    left: 0;
+    transform: translate(0%, -50%);
+}
+
+.client_review {}
+
+.single_client {
+    position: relative;
+    margin-top: 30px;
+}
+
+.client_img {
+    background: #ffffff;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.client_img img {
+    width: 100%;
+}
+
+.client_text {
+    background: #fff;
+    padding: 20px 20px 20px 77px;
+    width: calc(100% - 50px);
+    margin-left: auto;
+    border: 1px solid #eaeaea;
+}
+
+.client_text p {
+    text-align: justify;
+}
+
+.client_text h4 {
+    font-size: 14px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.client_text span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #666666;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.client_review .slick-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.client_review .slick-dots button {
+    font-size: 0;
+    border: 0;
+    width: 10px;
+    height: 10px;
+    background: #000757;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.client_review .slick-dots .slick-active button {
+    background: #0083ff;
+}
+
+/*FAQ CSS HERE*/
+.faq_header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq_header button {
+    border: 0;
+    background: transparent;
+    width: 70px;
+    height: 60px;
+    border: 1px solid #000757;
+    position: relative
+}
+
+
+
+.faq_header button span:nth-of-type(1) {
+    background: #000757;
+    width: 16px;
+    height: 4px;
+    display: inline-block;
+}
+
+.faq_header button span:nth-of-type(2) {
+    width: 4px;
+    height: 0px;
+    background: #000757;
+    display: inline-block;
+}
+
+.faq_header button.active span:nth-of-type(2) {
+    height: 16px;
+    /*    width: 4px;*/
+}
+
+.faq_header span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.faq_header h4 {
+    font-size: 18px;
+    border: 1px solid #000757;
+    line-height: 60px;
+    width: 82%;
+    margin-left: 30px;
+    padding-left: 20px;
+}
+
+.faq_body {
+    width: 81.5%;
+    margin-left: auto;
+    text-align: justify;
+    border: 1px solid #000757;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+/*==============================
+     10. OFFERING PART CSS
+==============================*/
+.single_price {
+    position: relative;
+    transition: all .3s linear;
+}
+
+/*
+.price_detail {
+    position: relative;
+}
+*/
+.single_price .price_list {
+    position: absolute;
+    top: 78px;
+    left: 50%;
+    text-align: ;
+    transform: translateX(-50%);
+}
+
+.price_detail h4 {
+    font-size: 24px;
+    background: #f5f8ff;
+    padding: 30px 0 90px 0;
+}
+
+.price_list {
+    background: #eaeaea;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 77px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.price_wrap {
+    background: #000757;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    transition: all .3s linear;
+}
+
+.price_list .price_wrap {
+    position: relative;
+}
+
+.price_list h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    display: block ruby;
+    color: #fff;
+}
+
+.price_list span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.about_price {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    border: 1px solid #eaeaea;
+    border-top: 0;
+}
+
+.about_price a {
+    font-size: 14px;
+    color: #79797a;
+    text-transform: capitalize;
+    background: #f5f8ff;
+    display: block;
+    padding: 15px 0;
+}
+
+.about_price .about_price_two {
+    background: #fff;
+}
+
+.price_btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+}
+
+.price_btn a {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000757;
+    background: #fff;
+    border: 1px solid #000757;
+    padding: 15px 20px;
+    transition: all .3s linear;
+}
+
+.single_price:hover {
+    box-shadow: 0px 0px 10px 0px rgba(149, 149, 149, 0.6);
+}
+
+.single_price:hover .price_wrap {
+    background: #0083ff;
+}
+
+.single_price:hover .price_btn a {
+    background: #0083ff;
+    color: #fff;
+    border: transparent;
+}
+
+/*==============================
+     11. CONTACT CSS
+==============================*/
+.contact_part.bg_cover {
+    background-attachment: fixed !important;
+}
+
+.contact_overlay {
+    background: rgba(0, 7, 87, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.contact_part .section_title h2 {
+    color: #fff;
+}
+
+.contact_form {}
+
+.contact_form input {
+    text-transform: capitalize;
+    color: #fff;
+    background: transparent;
+    border: 0;
+}
+
+.contact_form input::placeholder {
+    color: #fff;
+}
+
+.contact_form span {
+    background: #fff;
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+}
+
+/*==============================
+     12. LATEST NEWS CSS
+==============================*/
+.single_news {
+    transition: all .3s linear;
+}
+
+.single_news:hover {
+    box-shadow: 0px 0px 10px 0px rgba(149, 149, 149, 0.6);
+}
+
+.news_img {}
+
+.news_card {
+    border: 1px solid #eaeaea;
+    border-top: 0;
+}
+
+.news_date {}
+
+.news_date .fa {
+    color: #666;
+}
+
+.news_date span {
+    font-size: 14px;
+    color: #666666;
+}
+
+.news_text {}
+
+.news_text h4 {
+    font-size: 18px;
+}
+
+.news_text p {
+    text-align: justify;
+    padding-right: 47px;
+    font-size: 14px;
+}
+
+/*==============================
+     12. FINALCIAL SERVICE CSS
+==============================*/
+.finalcial_service {
+    background: #f5f8ff;
+}
+
+.fin_serv_text {}
+
+.fin_serv_text h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/*==============================
+     12. FOOTER CSS
+==============================*/
+.footer_part {
+    background: #000757;
+}
+
+.footer_top {
+    border-bottom: 1px solid #fff;
+}
+
+/*ABOUT*/
+.footer_title {}
+
+.footer_title h4 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer_title span {
+    background: #fff;
+    width: 40px;
+    height: 1px;
+    display: inline-block;
+}
+
+.footer_title p {
+    color: #fff;
+    padding-top: 30px;
+}
+
+.footer_search {
+    position: relative;
+}
+
+.footer_search input {
+    width: 100%;
+    font-size: 14px;
+    color: #666666;
+    padding: 18px 0;
+    padding-left: 10px;
+
+}
+
+.footer_button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer_button a {
+    color: #fff;
+    background: #007bff;
+    padding: 12px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.footer_icon {}
+
+.footer_icon .fa {
+    color: #fff;
+    font-size: 14px;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #fff;
+}
+
+.footer_icon .fa:hover {
+    border: transparent;
+    background: #007bff;
+}
+
+/*OUR BLOG*/
+.blog_detail {}
+
+.blog_detail .fa {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 5px;
+    padding-top: 30px;
+}
+
+.blog_detail span {
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.blog_detail p {
+    color: #fff;
+    padding-top: 5px;
+}
+
+/*FOOTER_LINKS*/
+.footer_links .link_list {
+    display: flex;
+    align-items: center;
+}
+
+.footer_links .link_list .fa {
+    font-size: 12px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.footer_links .link_list a {
+    font-size: 13px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+/*FOOTER_BOTTOM*/
+.bottom_left {}
+
+.bottom_left span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.bottom_right {
+    text-align: right;
+}
+
+.bottom_right ul {
+    margin-bottom: 0;
+}
+
+.bottom_right ul li {
+    display: inline-block;
+}
+
+.bottom_right ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-left: 35px;
+}
+
+.bottom_right ul li:first-child a {
+    margin-left: 0;
+}
