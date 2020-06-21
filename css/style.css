@@ -184,6 +184,27 @@ a:hover {
 /*************************
 =======MENUBAR HERE=======
 *************************/
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+    background: #f5f8ff;
+}
+
+.container.menu_prt {
+    background: #000757;
+}
+
+.navbar-nav {
+    padding: 10px 0;
+}
 
 .menu_item .navbar-nav .nav-item .nav-link {
     font-family: 'Montserrat', sans-serif;
@@ -277,8 +298,9 @@ a:hover {
     width: 350px;
     opacity: 1;
     visibility: visible;
-    bottom: -45px;
+    bottom: -37px;
     z-index: 9;
+    transition: all .3s linear;
 }
 
 /*==========================
@@ -330,7 +352,7 @@ a:hover {
      04. ABOUT PART CSS
 ==============================*/
 .single_about {
-    display: flex;
+    /*    display: flex;*/
 }
 
 .about_left {
@@ -356,12 +378,12 @@ a:hover {
     background: #0083ff;
 }
 
-.about_icon img {}
 
 .about_text h2 {
     font-size: 18px;
     color: #000757;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .about_text p {
@@ -369,6 +391,7 @@ a:hover {
     color: #666666;
     line-height: 1.5;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 /*ABOUT_RIGHT*/
@@ -978,7 +1001,7 @@ a:hover {
     font-size: 14px;
 }
 
-/*==============================
+/*=============================
      12. FINALCIAL SERVICE CSS
 ==============================*/
 .finalcial_service {
@@ -992,7 +1015,7 @@ a:hover {
     font-weight: 700;
 }
 
-/*==============================
+/*=============================
      12. FOOTER CSS
 ==============================*/
 .footer_part {
@@ -1142,3 +1165,277 @@ a:hover {
 .bottom_right ul li:first-child a {
     margin-left: 0;
 }
+
+/*******************************
+***********=============********
+     13. BLOG PAGE 
+***********=============********
+********************************/
+
+/*=============================
+     14. BLOG BANNER CSS
+==============================*/
+.blog_banner_overlay {
+    background: rgba(0, 7, 87, 0.6);
+}
+
+.page_section_title h2 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 700;
+    padding: 125px 0;
+}
+
+.page_section_title span {
+    color: #0083ff;
+}
+
+/*=============================
+     15. BLOG HEADLINES CSS
+==============================*/
+/*<!-- blog_headline -->*/
+.blog_headline {
+    display: flex;
+}
+
+.blog_hline h2 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.hline_date a {
+    color: #666666;
+    font-size: 14px;
+}
+
+.hline_user a {
+    font-size: 14px;
+    color: #666666;
+}
+
+.blog_hline_date {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.bl_p_two {
+    text-align: center;
+    background: #000757;
+    color: #fff;
+    padding: 35px 60px;
+}
+
+/*<!-- blog_tag -->*/
+.blog_tag {
+    position: relative;
+}
+
+.blog_tag input {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.blog_tag input::placeholder {
+    color: #000757;
+}
+
+.blog_input_social {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.blog_input_social a {
+    background: #000757;
+    color: #fff;
+    padding-left: 15px;
+    padding: 21px;
+}
+
+/*<!-- blog_btn -->*/
+.blog_btn_wrap {
+    display: flex;
+}
+
+.blog_btn button {
+    font-size: 14px;
+    background: transparent;
+    border: 0;
+}
+
+.blog_btn button a {
+    font-size: 14px;
+    color: #000757;
+    padding: 15px 35px;
+    border: 1px solid #000757;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: all .3s linear;
+}
+
+.blog_btn button a:hover {
+    color: #fff;
+    background: #0083ff;
+    border: transparent;
+}
+
+/*blog_info*/
+
+.blog_info {
+    display: flex;
+    align-items: center;
+    background: #000757;
+}
+
+.blog_in_img_wrap {
+    padding: 30px 20px 30px 40px;
+}
+
+.blog_info_img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.blog_info_text h6 {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Hind', sans-serif;
+    font-weight: 600;
+}
+
+.blog_info_text p {
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 40px;
+}
+
+/*COMMENT*/
+.single_cmnt {
+    display: flex;
+    align-items: center;
+}
+
+.sing_cmnt_img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.sing_cmnt_text h6 {
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sing_cmnt_text a {
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    color: #000757;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.single_cmnt.midd.pt-30 {
+    padding-left: 179px;
+}
+
+/*LEAVE A COMMENT*/
+.leave_cmnt h2 {
+    font-size: 30px;
+}
+
+.cmnt_form input {
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    color: #666666;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+}
+
+.cmnt_form_wrap {
+    display: flex;
+    margin: 30px 0;
+}
+
+.cmnt_form .commnt {
+    padding-bottom: 140px;
+}
+
+.blog_form_btn a {
+    background: #0083ff;
+    color: #fff;
+    padding: 15px 25px;
+}
+
+
+/*================================
+     15. BLOG BANNER RIGHT BAR CSS
+=================================*/
+/*CATEGORY PART*/
+.cat_items ul li a {
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    color: #000757;
+    margin-top: 30px;
+    border-bottom: 1px solid #000757;
+    padding-bottom: 12px;
+    display: block;
+    transition: all .3s linear;
+}
+
+.cat_items ul li:first-child a {
+    margin-top: 0;
+}
+
+.cat_items ul li a.active,
+.cat_items ul li a:hover {
+    color: #0083ff;
+}
+
+/*SEARCH PART*/
+.serach_area {
+    position: relative;
+}
+
+.serach_area input {
+    font-size: 14px;
+    width: 100%;
+    padding: 15px 20px;
+    color: #666666;
+    border: 1px solid #000757;
+}
+
+.search_area_icon a {
+    background: #0083ff;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 19px 25px;
+}
+
+/*POPULAR POST CSS*/
+.single_post {
+    display: flex;
+    align-items: center;
+}
+
+.post_text span {
+    font-size: 14px;
+    color: #000757;
+    cursor: pointer;
+}
+
+
+/*=============================
+     **************** CSS
+==============================*/
