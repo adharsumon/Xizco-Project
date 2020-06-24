@@ -1,8 +1,44 @@
 /*// Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .sub-nav-toggler {
+        display: none;
+    }
+
+    .colorPkr_wrap {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .pickr {
+        margin-left: -50px;
+    }
+
+    .pickr.active {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .pick_icon .fa {
+        color: var(--btn_icon_color);
+        font-size: 30px;
+    }
+
+}
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .colorPkr_wrap {
+        display: none;
+    }
+
+    .sub-nav-toggler {
+        display: none;
+    }
+
     .section_title h2 {
         font-size: 28px;
     }
@@ -68,6 +104,14 @@
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .colorPkr_wrap {
+        display: none;
+    }
+
+    .sub-nav-toggler {
+        display: none;
+    }
+
     .header_logo.pt-35.pb-35 {
         text-align: center;
     }
@@ -308,6 +352,33 @@
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
+    .colorPkr_wrap {
+        display: none;
+    }
+
+    .menu_item .navbar-nav .nav-item > .submenu {
+        position: relative;
+        left: 0;
+        width: 150px;
+        background: red;
+        text-align: left;
+        z-index: 999;
+        margin-top: 12px;
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+        display: none;
+    }
+
+    .menu_item .navbar-nav .nav-item:hover > .submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .sub-nav-toggler {
+        float: right;
+    }
+
     .header_logo.pt-35.pb-35 {
         text-align: center;
     }
@@ -344,14 +415,16 @@
         transform: translateX(-50%);
     }
 
+    /*
     .btn_wrap.btn_show {
         width: 350px;
         opacity: 1;
         visibility: visible;
-        bottom: -37px;
+        bottom: -50px;
         z-index: 9;
         transition: all .3s linear;
     }
+*/
 
     .banner_area {
         padding: 100px 0;
@@ -643,6 +716,10 @@
 
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
+    .colorPkr_wrap {
+        display: none;
+    }
+
     .row.res {
         display: none;
     }
@@ -1182,14 +1259,5 @@
     .cmnt_form .commnt {
         padding-bottom: 100px;
     }
-
-
-
-
-
-
-
-
-
 
 }

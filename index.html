@@ -15,8 +15,12 @@
     <link rel="stylesheet" href="css/slick.css">
     <!--  venobox css  -->
     <link rel="stylesheet" href="css/venobox.min.css">
-    <!--  wow css  -->
-    <link rel="stylesheet" href="css/animate.css">
+    <!--  Animation css  -->
+    <!--    <link rel="stylesheet" href="css/animate.css">-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--  pickr css  -->
+    <link rel="stylesheet" href="css/classic.min.css">
+
 
     <!--  BOOTSTRAP css  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -116,6 +120,19 @@
 
         <!--    MENUBAR PART HERE-->
         <nav class="navbar navbar-expand-md navbar-light">
+            <!--COLOR PICKR HERE-->
+            <div class="colorPkr_wrap">
+                <div class="pikr_area">
+                    <div class="color_pickr_btn"></div>
+                </div>
+                <div class="pick_icon">
+                    <a href="#">
+                        <i class="fa fa-gear"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--COLOR PICKR HERE-->
             <div class="container menu_prt">
                 <div class="row mx-auto">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -143,6 +160,17 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Service</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="#">Service 01</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Service 02</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Service 03</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Portfolio</a>
@@ -185,9 +213,10 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="banner_slider">
+
                             <div class="banner_area">
                                 <div class="banner_text">
-                                    <h1>Business & Finance
+                                    <h1 data-animation="bounce" animation-delay=".5">Business & Finance
                                         problem solved</h1>
                                 </div>
                                 <div class="theme_button mt-30">
@@ -197,7 +226,7 @@
 
                             <div class="banner_area">
                                 <div class="banner_text">
-                                    <h1>Business & Finance
+                                    <h1 data-animation="bounce" animation-delay=".5">Business & Finance
                                         problem solved</h1>
                                 </div>
                                 <div class="theme_button mt-30">
@@ -206,7 +235,7 @@
                             </div>
                             <div class="banner_area">
                                 <div class="banner_text">
-                                    <h1>Business & Finance
+                                    <h1 data-animation="bounce" animation-delay=".5">Business & Finance
                                         problem solved</h1>
                                 </div>
                                 <div class="theme_button mt-30">
@@ -1369,6 +1398,8 @@
     <script src="js/waypoints.min.js"></script>
     <!-- wow file here -->
     <script src="js/wow.min.js"></script>
+    <!-- pickr file here -->
+    <script src="js/pickr.min.js"></script>
 
     <!-- custom-js file-->
     <script src="js/custom.js"></script>

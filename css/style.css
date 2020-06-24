@@ -38,7 +38,7 @@ h6 {
     font-weight: 600;
     line-height: 1;
     margin-bottom: 0;
-    color: #000757;
+    color: var(--themeColor);
     text-transform: uppercase;
 }
 
@@ -68,10 +68,11 @@ a:hover {
     padding: 0 70px;
 }
 
-.single_about {
-    margin: 0;
-    padding: 0;
+:root {
+    --themeColor: #000757;
+    --btn_icon_color: #0083ff
 }
+
 
 /*ALL BUTTON STYLE HERE*/
 .theme_button {}
@@ -80,7 +81,7 @@ a:hover {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    background: #0083ff;
+    background: var(--btn_icon_color);
     padding: 15px 25px;
 }
 
@@ -89,7 +90,7 @@ a:hover {
 
 .section_title h2 {
     font-size: 30px;
-    color: #000757;
+    color: var(--themeColor);
     text-transform: uppercase;
     /*    text-align: center;*/
 }
@@ -105,7 +106,7 @@ a:hover {
 .section_title span:before {
     position: absolute;
     content: "";
-    background: #0083ff;
+    background: var(--btn_icon_color);
     width: 30px;
     height: 5px;
     top: 50%;
@@ -121,7 +122,8 @@ a:hover {
 ==============================*/
 /*HEADER TOP*/
 .header_top {
-    background: #000757;
+    /*    background: var(--themeColor);*/
+    background: var(--themeColor);
 }
 
 .header_top .top_title span {
@@ -135,7 +137,7 @@ a:hover {
 .header_top .top_social a {
     font-size: 16px;
     color: #fff;
-    background: #0083ff;
+    background: var(--btn_icon_color);
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -172,6 +174,10 @@ a:hover {
     border-radius: 50%;
 }
 
+.info_icon .fa {
+    color: var(--btn_icon_color);
+}
+
 .header_info .info_text {
     margin-left: 18px;
 }
@@ -180,6 +186,12 @@ a:hover {
     font-size: 14px;
     color: #666666;
 }
+
+
+
+/*************************
+=======COLOR PICKR HERE=======
+*************************/
 
 /*************************
 =======MENUBAR HERE=======
@@ -199,7 +211,7 @@ a:hover {
 }
 
 .container.menu_prt {
-    background: #000757;
+    background: var(--themeColor);
 }
 
 .navbar-nav {
@@ -237,6 +249,33 @@ a:hover {
     visibility: visible;
     opacity: 1;
 }
+
+.menu_item .navbar-nav .nav-item {
+    position: relative;
+}
+
+.menu_item .navbar-nav .nav-item > .submenu {
+    position: absolute;
+    left: 0;
+    width: 150px;
+    background: red;
+    text-align: left;
+    z-index: 999;
+    margin-top: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+    text-align: center;
+}
+
+.menu_item .navbar-nav .nav-item > .submenu li a {
+    margin: 15px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
 
 .btn_search {
     font-size: 14px;
@@ -282,7 +321,7 @@ a:hover {
 
 .btn_two {
     position: absolute;
-    background: #0083ff;
+    background: var(--btn_icon_color);
     color: #fff;
     top: 50%;
     right: 5px;
@@ -298,7 +337,7 @@ a:hover {
     width: 350px;
     opacity: 1;
     visibility: visible;
-    bottom: -37px;
+    bottom: -50px;
     z-index: 9;
     transition: all .3s linear;
 }
@@ -344,13 +383,18 @@ a:hover {
 }
 
 .banner_slider .slick-dots .slick-active button {
-    background: #0083ff;
+    background: var(--btn_icon_color);
     border: transparent;
 }
 
 /*==============================
      04. ABOUT PART CSS
 ==============================*/
+.single_about {
+    margin: 0;
+    padding: 0;
+}
+
 .single_about {
     /*    display: flex;*/
 }
@@ -364,7 +408,7 @@ a:hover {
 }
 
 .about_icon {
-    background: #000757;
+    background: var(--themeColor);
     display: inline-block;
     width: 45px;
     height: 45px;
@@ -375,13 +419,13 @@ a:hover {
 }
 
 .about_icon:hover {
-    background: #0083ff;
+    background: var(--btn_icon_color);
 }
 
 
 .about_text h2 {
     font-size: 18px;
-    color: #000757;
+    color: var(--themeColor);
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -426,7 +470,7 @@ a:hover {
 }
 
 .service_icon {
-    background: #000757;
+    background: var(--themeColor);
     display: inline-block;
     width: 45px;
     height: 45px;
@@ -440,19 +484,19 @@ a:hover {
 }
 
 .service_btn a {
-    color: #000757;
+    color: var(--themeColor);
     background: transparent;
     padding: 15px 25px;
-    border: 1px solid #000757;
+    border: 1px solid var(--themeColor);
     transition: all .3s linear;
 }
 
 .single_service:hover .service_icon {
-    background: #0083ff;
+    background: var(--btn_icon_color);
 }
 
 .single_service:hover .service_btn a {
-    background: #0083ff;
+    background: var(--btn_icon_color);
     border: transparent;
     color: #fff;
 }
@@ -465,22 +509,22 @@ a:hover {
 .work_btn button {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    color: #000757;
+    color: var(--themeColor);
     background: transparent;
     padding: 15px 25px;
-    border: 1px solid #000757;
+    border: 1px solid var(--themeColor);
     margin-left: 10px;
     transition: all .3s linear;
 }
 
 .work_btn button:hover {
-    background: #0083ff;
+    background: var(--btn_icon_color);
     border: transparent;
     color: #fff;
 }
 
 .work_btn .work_btn_active {
-    background: #0083ff;
+    background: var(--btn_icon_color);
     border: transparent;
     color: #fff;
 }
@@ -515,7 +559,7 @@ a:hover {
 .work_gal_icon a {
     font-size: 18px;
     color: #fff;
-    background: #0083ff;
+    background: var(--btn_icon_color);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -565,7 +609,7 @@ a:hover {
 
 .counter_area .fa {
     font-size: 40px;
-    background: #000757;
+    background: var(--themeColor);
     color: #fff;
     width: 80px;
     height: 80px;
@@ -627,19 +671,19 @@ a:hover {
 
 .team_icon a {
     font-size: 14px;
-    color: #000757;
+    color: var(--themeColor);
     background: transparent;
     width: 30px;
     height: 30px;
     line-height: 30px;
     border-radius: 50%;
-    border: 1px solid #000757;
+    border: 1px solid var(--themeColor);
     margin-left: 10px;
     transition: all .3s linear;
 }
 
 .team_icon a:hover {
-    background: #0083ff;
+    background: var(--btn_icon_color);
     border: transparent;
     color: #fff;
 }
@@ -732,13 +776,13 @@ a:hover {
     border: 0;
     width: 10px;
     height: 10px;
-    background: #000757;
+    background: var(--themeColor);
     border-radius: 50%;
     margin-left: 10px;
 }
 
 .client_review .slick-dots .slick-active button {
-    background: #0083ff;
+    background: var(--btn_icon_color);
 }
 
 /*FAQ CSS HERE*/
@@ -753,14 +797,14 @@ a:hover {
     background: transparent;
     width: 70px;
     height: 60px;
-    border: 1px solid #000757;
+    border: 1px solid var(--themeColor);
     position: relative
 }
 
 
 
 .faq_header button span:nth-of-type(1) {
-    background: #000757;
+    background: var(--themeColor);
     width: 16px;
     height: 4px;
     display: inline-block;
@@ -769,7 +813,7 @@ a:hover {
 .faq_header button span:nth-of-type(2) {
     width: 4px;
     height: 0px;
-    background: #000757;
+    background: var(--themeColor);
     display: inline-block;
 }
 
@@ -787,7 +831,7 @@ a:hover {
 
 .faq_header h4 {
     font-size: 18px;
-    border: 1px solid #000757;
+    border: 1px solid var(--themeColor);
     line-height: 60px;
     width: 82%;
     margin-left: 30px;
@@ -798,7 +842,7 @@ a:hover {
     width: 81.5%;
     margin-left: auto;
     text-align: justify;
-    border: 1px solid #000757;
+    border: 1px solid var(--themeColor);
     padding: 20px;
     margin-top: 15px;
 }
@@ -842,7 +886,7 @@ a:hover {
 }
 
 .price_wrap {
-    background: #000757;
+    background: var(--themeColor);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -902,9 +946,9 @@ a:hover {
 .price_btn a {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    color: #000757;
+    color: var(--themeColor);
     background: #fff;
-    border: 1px solid #000757;
+    border: 1px solid var(--themeColor);
     padding: 15px 20px;
     transition: all .3s linear;
 }
@@ -914,11 +958,11 @@ a:hover {
 }
 
 .single_price:hover .price_wrap {
-    background: #0083ff;
+    background: var(--btn_icon_color);
 }
 
 .single_price:hover .price_btn a {
-    background: #0083ff;
+    background: var(--btn_icon_color);
     color: #fff;
     border: transparent;
 }
@@ -1019,7 +1063,7 @@ a:hover {
      12. FOOTER CSS
 ==============================*/
 .footer_part {
-    background: #000757;
+    background: var(--themeColor);
 }
 
 .footer_top {
@@ -1068,7 +1112,7 @@ a:hover {
 
 .footer_button a {
     color: #fff;
-    background: #007bff;
+    background: var(--btn_icon_color);
     padding: 12px;
     text-transform: capitalize;
     font-size: 14px;
@@ -1187,7 +1231,7 @@ a:hover {
 }
 
 .page_section_title span {
-    color: #0083ff;
+    color: var(--btn_icon_color);
 }
 
 /*=============================
@@ -1221,7 +1265,7 @@ a:hover {
 
 .bl_p_two {
     text-align: center;
-    background: #000757;
+    background: var(--themeColor);
     color: #fff;
     padding: 35px 60px;
 }
@@ -1231,15 +1275,18 @@ a:hover {
     position: relative;
 }
 
-.blog_tag input {
-    width: 100%;
-    padding: 18px 20px;
-    font-size: 14px;
-    text-transform: capitalize;
+.blog_tags {
+    border: 1px solid var(--themeColor);
+    padding: 20px;
 }
 
-.blog_tag input::placeholder {
-    color: #000757;
+.blog_tags .active {
+    color: var(--btn_icon_color);
+}
+
+.blog_tags span {
+    font-size: 14px;
+    color: var(--themeColor);
 }
 
 .blog_input_social {
@@ -1251,7 +1298,7 @@ a:hover {
 }
 
 .blog_input_social a {
-    background: #000757;
+    background: var(--themeColor);
     color: #fff;
     padding-left: 15px;
     padding: 21px;
@@ -1270,9 +1317,9 @@ a:hover {
 
 .blog_btn button a {
     font-size: 14px;
-    color: #000757;
+    color: var(--themeColor);
     padding: 15px 35px;
-    border: 1px solid #000757;
+    border: 1px solid var(--themeColor);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     transition: all .3s linear;
@@ -1280,7 +1327,7 @@ a:hover {
 
 .blog_btn button a:hover {
     color: #fff;
-    background: #0083ff;
+    background: var(--btn_icon_color);
     border: transparent;
 }
 
@@ -1289,7 +1336,7 @@ a:hover {
 .blog_info {
     display: flex;
     align-items: center;
-    background: #000757;
+    background: var(--themeColor);
 }
 
 .blog_in_img_wrap {
@@ -1338,7 +1385,7 @@ a:hover {
 .sing_cmnt_text a {
     font-family: 'Hind', sans-serif;
     font-size: 14px;
-    color: #000757;
+    color: var(--themeColor);
     margin-top: 25px;
     font-weight: 600;
 }
@@ -1371,7 +1418,7 @@ a:hover {
 }
 
 .blog_form_btn a {
-    background: #0083ff;
+    background: var(--btn_icon_color);
     color: #fff;
     padding: 15px 25px;
 }
@@ -1384,9 +1431,9 @@ a:hover {
 .cat_items ul li a {
     font-family: 'Hind', sans-serif;
     font-size: 14px;
-    color: #000757;
+    color: var(--themeColor);
     margin-top: 30px;
-    border-bottom: 1px solid #000757;
+    border-bottom: 1px solid var(--themeColor);
     padding-bottom: 12px;
     display: block;
     transition: all .3s linear;
@@ -1398,7 +1445,7 @@ a:hover {
 
 .cat_items ul li a.active,
 .cat_items ul li a:hover {
-    color: #0083ff;
+    color: var(--btn_icon_color);
 }
 
 /*SEARCH PART*/
@@ -1411,11 +1458,11 @@ a:hover {
     width: 100%;
     padding: 15px 20px;
     color: #666666;
-    border: 1px solid #000757;
+    border: 1px solid var(--themeColor);
 }
 
 .search_area_icon a {
-    background: #0083ff;
+    background: var(--btn_icon_color);
     color: #fff;
     position: absolute;
     top: 50%;
@@ -1432,7 +1479,7 @@ a:hover {
 
 .post_text span {
     font-size: 14px;
-    color: #000757;
+    color: var(--themeColor);
     cursor: pointer;
 }
 
